@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Front-End Tools",
+    "tools": [
+      { "name": "HTML", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" },
+      { "name": "CSS", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" },
+      { "name": "JavaScript", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
+      { "name": "React.Js", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" },
+      { "name": "Next.Js", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" },
+      { "name": "Tailwind", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-plain-wordmark.svg" },
+      { "name": "Bootstrap", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" }
+    ]
+  },
+  {
+    "title": "Back-End Tools",
+    "tools": [
+      { "name": "Laravel", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original-wordmark.svg" }
+    ]
+  },
+  {
+    "title": "Dev-ops Tools",
+    "tools": [
+      { "name": "Github", "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" }
+    ]
+  }
+]

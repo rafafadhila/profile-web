@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "company": "PT. ANOMALI LINTAS CAKRAWALA",
+    "image": "/images/testimonial/empty-profile.png",
+    "feedback": "Bekerja bersama Rafa adalah pengalaman yang menyenangkan. Ia dapat diandalkan, komunikatif, dan selalu terbuka terhadap masukan. Kemampuannya dalam mengatur tugas dan menjaga fokus tim sangat membantu kami menyelesaikan proyek tepat waktu dengan hasil yang memuaskan."
+  },
+  {
+    "id": 2,
+    "name": "Malika",
+    "company": "BINUS UNIVERSITY",
+    "image": "/images/testimonial/empty-profile.png",
+    "feedback": "Rafa adalah teman di kampus yang visioner dan memiliki kemampuan teknis yang solid. Ia cepat memahami masalah dan mampu memberikan solusi kreatif yang efisien, terutama saat mengembangkan aplikasi saat project kuliah."
+  },
+  {
+    "id": 3,
+    "name": "Rais",
+    "company": "BINUS UNIVERSITY",
+    "image": "/images/testimonial/empty-profile.png",
+    "feedback": "Bisa menjadi teman Rafa saat kuliah adalah hal yang menyenangkan dan juga pengalaman yang tidak terlupakan, dia sangatlah rajin dan juga asik untuk menjadi teman. Saat mengerjakan project kuliah dia sangat rajin dan juga mampu memahami kendala kendala yang terjadi."
+  }
+]

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 :root {
   --background: #ffffff;
@@ -22,5 +23,13 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-conic-gray {
+  background: conic-gradient(at bottom, #4f46e5, #818cf8, #c7d2fe);
 }
