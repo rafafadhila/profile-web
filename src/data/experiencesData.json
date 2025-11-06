@@ -1,0 +1,15 @@
+[
+  {
+    "title": "Intern Web Developer",
+    "company": "PT. Anomali Lintas Cakrawala",
+    "year": "2023-2024",
+    "description": "During my one-year internship as a web developer, I was responsible for designing and developing company profile websites, as well as creating internal applications for office use. I used the Laravel framework as my main development tool.",
+    "tasks": [
+      "Designed, developed, and maintained company profile websites",
+      "Created and implemented a custom CMS for managing website content",
+      "Created and maintained documentation for team-developed websites",
+      "Developed simple internal applications for office use",
+      "Tested and debugged team-developed applications"
+    ]
+  }
+]

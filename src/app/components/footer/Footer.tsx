@@ -70,9 +70,10 @@ export default function Footer() {
                         </li>
                     </ul>
                 </div>
-                <div className='py-3'>
-                    <h3>Rafa Fadhila Web Developer</h3>
+                <div className="py-3 text-center text-sm text-neutral-500">
+                    © {new Date().getFullYear()} Created by <span className="font-semibold text-indigo-700">Rafa Fadhila</span>
                 </div>
+
             </div>
         </footer>
     )

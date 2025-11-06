@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Web Apps for Game Tracking",
+    "image": "./portfolio/ludolog.png",
+    "description": "This project aimed to solve issues with game discovery and tracking. My main duties involved web design and documentation creation. A primary challenge was using Figma to develop an effective and memorable UI. Ultimately, the user feedback received has been very positive.",
+    "tech": ["Laravel", "React"]
+  },
+  {
+    "title": "Developed Company Profile for PT.Phizeta",
+    "image": "./portfolio/ludolog.png",
+    "description": "The primary goal of this web project was to enhance the company's online visibility and presence. My core tasks were to develop the Company Profile website and an internal Dashboard for component editing. The tech stack utilized for this development was Laravel and PostgreSQL. The final presentation to my supervisor was highly successful and well-received.",
+    "tech": ["Laravel", "PostgreSQL"]
+  }
+]
