@@ -14,7 +14,7 @@ export default function SocialMediaLink() {
             </a>
 
             <a
-                href="https://linkedin.com/in/in/rafa-fadhila-3817231a1/"
+                href="https://linkedin.com/in/rafa-fadhila-3817231a1/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cursor-pointer"
