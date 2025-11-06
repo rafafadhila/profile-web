@@ -32,7 +32,7 @@ export default function Testimonial() {
                 </h1>
 
                 <h2 className="text-lg md:text-xl font-semibold mb-6 leading-relaxed">
-                    Thoughts and impressions from those who've collaborated with me.
+                    Thoughts and impressions from those who&apos;ve collaborated with me.
                 </h2>
 
                 {/* Card Section */}

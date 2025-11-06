@@ -2,8 +2,6 @@
 
 import React from 'react'
 
-import { FaGithub } from 'react-icons/fa'
-import { FaLinkedin } from 'react-icons/fa'
 import { FaPhone } from "react-icons/fa6";
 import { GoMail } from "react-icons/go";
 
@@ -13,7 +11,7 @@ import SocialMediaLink from '../SocialMediaLink';
 
 export default function Contact() {
 
-    const { isDark, toggleTheme } = useTheme()
+    const { isDark } = useTheme()
 
     return (
         <section

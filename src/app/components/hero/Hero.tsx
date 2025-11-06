@@ -31,10 +31,10 @@ export default function Hero() {
 
         <div className={`about-me text-center md:text-left ${isDark ? 'text-white' : 'text-black'} transition-colors`}>
           <h1 className="text-[52px] font-extrabold mb-1 text-center md:text-left">
-            Hi, I'm Rafa Fadhila
+            Hi, I&apos;m Rafa Fadhila
           </h1>
           <h3 className="text-[20px] font-medium mb-5 text-center md:text-left">
-            I'm a Future Web Designer, And Fullstack Web Developer
+            I&apos;m a Future Web Designer, And Fullstack Web Developer
           </h3>
           {/* socmed */}
           <SocialMediaLink></SocialMediaLink>

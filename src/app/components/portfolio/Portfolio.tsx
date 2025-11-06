@@ -3,6 +3,7 @@
 import React from 'react'
 import { useTheme } from '@/app/providers/themeProvider'
 import portfolioData from '@/data/portfoliosData.json'
+import Image from 'next/image'
 
 export default function Portfolio() {
     const { isDark } = useTheme()
@@ -29,13 +30,17 @@ export default function Portfolio() {
                             className={`rounded-md overflow-hidden shadow-md ${isDark ? 'bg-neutral-800 text-white' : 'bg-white text-black'
                                 } transition-colors`}
                         >
-                            <div className="w-full">
-                                <img
-                                    className="w-full object-cover"
+                            <div className="relative w-full h-64">
+                                <Image
+                                    className="object-cover"
                                     src={project.image}
                                     alt={project.title}
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    priority={index < 2} // optional: preloads first few images
                                 />
                             </div>
+
                             <div className="px-5 py-4 text-left">
                                 <h2 className="font-semibold text-xl mb-2">{project.title}</h2>
                                 <p className="mb-2">{project.description}</p>

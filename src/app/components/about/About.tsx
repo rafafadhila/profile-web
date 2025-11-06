@@ -4,13 +4,10 @@ import React from 'react'
 
 import { useTheme } from '@/app/providers/themeProvider'
 
-interface AboutProps {
-  isDark: boolean
-}
 
 export default function About() {
 
-  const { isDark, toggleTheme } = useTheme()
+  const { isDark } = useTheme()
 
   return (
     <section

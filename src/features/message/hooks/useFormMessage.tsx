@@ -23,8 +23,21 @@ export default function useFormMessage() {
 
         toast.success(response?.data?.message || 'Message sent successfully!')
         resetForm()
-      } catch (error: any) {
-        toast.error(error?.response?.data?.message || 'Failed to send message')
+      } catch (error: unknown) {
+        let errorMessage = 'Failed to send message'
+
+        if (error instanceof Error) {
+          errorMessage = error.message
+        } else if (
+          typeof error === 'object' &&
+          error &&
+          'response' in error &&
+          typeof (error as any).response?.data?.message === 'string'
+        ) {
+          errorMessage = (error as any).response.data.message
+        }
+
+        toast.error(errorMessage)
       }
     },
   })

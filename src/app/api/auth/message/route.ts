@@ -18,19 +18,20 @@ export async function POST(req: NextRequest) {
                 message: "Message has been sent.",
                 data: response,
             },
-            {
-                status: 200,
-            }
+            { status: 200 }
         );
-    } catch (error: any) {
+    } catch (error: unknown) {
+        const errorMessage =
+            error instanceof Error
+                ? error.message
+                : "An error occurred while saving message.";
+
         return NextResponse.json(
             {
                 success: false,
-                message: error?.message || "An error occurred while saving message.",
+                message: errorMessage,
             },
-            {
-                status: 500,
-            }
+            { status: 500 }
         );
     }
 }
