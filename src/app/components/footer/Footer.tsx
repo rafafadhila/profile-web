@@ -1,14 +1,16 @@
 'use client'
 
 import React from 'react'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+
 
 import { useTheme } from '@/app/providers/themeProvider'
+import { useSmoothScroll } from '@/hooks/useSmoothScroll'
 import SocialMediaLink from '../SocialMediaLink'
 
 export default function Footer() {
 
     const { isDark } = useTheme()
+    const { scrollToSection } = useSmoothScroll()
 
     return (
         <footer className={`${isDark ? 'bg-black text-white' : 'bg-neutral-300 text-black'}`}>
@@ -17,12 +19,56 @@ export default function Footer() {
                     <SocialMediaLink></SocialMediaLink>
                 </div>
                 <div className='flex flex-wrap justify-center items-center gap-8 py-3'>
-                    <span>Home</span>
-                    <span>About</span>
-                    <span>Skill</span>
-                    <span>Portfolio</span>
-                    <span>Experience</span>
-                    <span>Contact</span>
+                    <ul className="menu menu-horizontal px-1 font-semibold">
+                        <li>
+                            <button
+                                onClick={() => scrollToSection('hero')}
+                                className="hover:underline decoration-indigo-500"
+                            >
+                                Home
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                onClick={() => scrollToSection('about')}
+                                className="hover:underline decoration-indigo-500"
+                            >
+                                About
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                onClick={() => scrollToSection('skill')}
+                                className="hover:underline decoration-indigo-500"
+                            >
+                                Skill
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                onClick={() => scrollToSection('portfolio')}
+                                className="hover:underline decoration-indigo-500"
+                            >
+                                Portfolio
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                onClick={() => scrollToSection('experience')}
+                                className="hover:underline decoration-indigo-500"
+                            >
+                                Experience
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                onClick={() => scrollToSection('contact')}
+                                className="hover:underline decoration-indigo-500"
+                            >
+                                Contact
+                            </button>
+                        </li>
+                    </ul>
                 </div>
                 <div className='py-3'>
                     <h3>Rafa Fadhila Web Developer</h3>
