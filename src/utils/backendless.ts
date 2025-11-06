@@ -1,7 +1,11 @@
 import Backendless from 'backendless';
 
-const APP_ID = '9AF9A7DA-6680-4ADD-A965-99ADC0A6898B';
-const API_KEY = '4758BD6C-C95C-4ECB-BAC1-AEF3AEE4D37B';
+const APP_ID = process.env.NEXT_PUBLIC_APP_ID!;
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY!;
+
+if (!APP_ID || !API_KEY) {
+  throw new Error("Missing Backendless environment variables. Check your .env.local file.");
+}
 
 Backendless.initApp(APP_ID, API_KEY);
 
