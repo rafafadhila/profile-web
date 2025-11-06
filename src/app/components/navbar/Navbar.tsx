@@ -41,7 +41,7 @@ export default function Navbar() {
                         <li>
                             <button
                                 onClick={() => scrollToSection('hero')}
-                                className="hover:underline decoration-indigo-500 text-indigo-600"
+                                className="hover:underline decoration-indigo-500"
                             >
                                 Home
                             </button>
