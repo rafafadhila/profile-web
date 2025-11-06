@@ -43,7 +43,7 @@ export default function Portfolio() {
                                     {project.tech.map((t, i) => (
                                         <span
                                             key={i}
-                                            className="text-sm font-bold border border-indigo-800 border-2 rounded-3xl p-2"
+                                            className="text-sm font-bold border-indigo-800 border-2 rounded-3xl p-2"
                                         >
                                             {t}
                                         </span>
