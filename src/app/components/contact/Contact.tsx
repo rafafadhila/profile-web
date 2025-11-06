@@ -9,6 +9,7 @@ import { GoMail } from "react-icons/go";
 
 import { useTheme } from '@/app/providers/themeProvider'
 import FormMessage from '@/features/message/components/FormMessage';
+import SocialMediaLink from '../SocialMediaLink';
 
 export default function Contact() {
 
@@ -37,25 +38,8 @@ export default function Contact() {
                             <GoMail className='text-2xl'/>
                             <span>rafafadhila03@gmail.com</span>
                         </a>
-                        <div className="flex gap-3 mb-10">
-                            <a
-                                href="https://github.com/yourusername"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="cursor-pointer"
-                            >
-                                <FaGithub className='text-2xl' />
-                            </a>
-
-                            <a
-                                href="https://linkedin.com/in/yourusername"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="cursor-pointer"
-                            >
-                                <FaLinkedin className='text-2xl' />
-                            </a>
-                        </div>
+                       {/* socmed */}
+                       <SocialMediaLink></SocialMediaLink>
                     </div>
                     
                     <FormMessage></FormMessage>

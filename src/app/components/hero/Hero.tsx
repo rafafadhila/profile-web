@@ -3,11 +3,9 @@
 import React from 'react'
 import Image from 'next/image'
 
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-
 import { useTheme } from '@/app/providers/themeProvider';
 import { useSmoothScroll } from '@/hooks/useSmoothScroll';
+import SocialMediaLink from '../SocialMediaLink';
 
 export default function Hero() {
 
@@ -38,26 +36,8 @@ export default function Hero() {
           <h3 className="text-[20px] font-medium mb-5 text-center md:text-left">
             I'm a Future Web Designer, And Fullstack Web Developer
           </h3>
-          <div className="flex gap-3 mb-10 justify-center md:justify-start">
-            <a
-              href="https://github.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer"
-            >
-              <FaGithub className='text-2xl' />
-            </a>
-
-            <a
-              href="https://linkedin.com/in/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cursor-pointer"
-            >
-              <FaLinkedin className='text-2xl' />
-            </a>
-          </div>
-
+          {/* socmed */}
+          <SocialMediaLink></SocialMediaLink>
 
           <button
             onClick={() => scrollToSection('about')}
