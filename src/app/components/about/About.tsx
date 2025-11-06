@@ -19,7 +19,7 @@ export default function About() {
         <h2 className="text-4xl font-semibold mb-12 underline-offset-8 underline decoration-indigo-800">About Me</h2>
 
         <p className="sm:text-left md:text-justify mb-6 leading-relaxed">
-          I'm Rafa Fadhila, a Computer Science graduate from Bina Nusantara University.
+          I&apos;m Rafa Fadhila, a Computer Science graduate from Bina Nusantara University.
           I have one year of experience as a web developer intern, where I built and maintained websites using modern web technologies.
         </p>
         <p className='text-justify mb-6 leading-relaxed'>

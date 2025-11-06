@@ -24,7 +24,7 @@ export default function Contact() {
 
                     <div className='flex flex-col items-center gap-6'>
                         <h2 className='text-xl font-semibold'>
-                            Let's Build Our Next Project Together!
+                            Lets&apos; Build Our Next Project Together!
                         </h2>
                         <a href='tel:+6281388180048'
                         className='flex gap-3 border-2 border-indigo-800 px-3 py-2 rounded-2xl hover:cursor-pointer hover:scale-110 shadow-md transition-all'>
