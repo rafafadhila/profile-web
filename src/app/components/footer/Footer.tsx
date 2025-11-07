@@ -19,7 +19,7 @@ export default function Footer() {
                     <SocialMediaLink></SocialMediaLink>
                 </div>
                 <div className='flex flex-wrap justify-center items-center gap-8 py-3'>
-                    <ul className="menu menu-horizontal px-1 font-semibold">
+                    <ul className="menu menu-horizontal px-1 font-semibold flex flex-wrap justify-center">
                         <li>
                             <button
                                 onClick={() => scrollToSection('hero')}
