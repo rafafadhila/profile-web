@@ -22,18 +22,61 @@ export default function Navbar() {
                         <ul
                             tabIndex={-1}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
                             <li>
-                                <a>Parent</a>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
+                                <button
+                                    onClick={() => scrollToSection('hero')}
+                                    className="hover:underline decoration-indigo-500"
+                                >
+                                    Home
+                                </button>
                             </li>
-                            <li><a>Item 3</a></li>
+                            <li>
+                                <button
+                                    onClick={() => scrollToSection('about')}
+                                    className="hover:underline decoration-indigo-500"
+                                >
+                                    About
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={() => scrollToSection('skill')}
+                                    className="hover:underline decoration-indigo-500"
+                                >
+                                    Skill
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={() => scrollToSection('portfolio')}
+                                    className="hover:underline decoration-indigo-500"
+                                >
+                                    Portfolio
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={() => scrollToSection('experience')}
+                                    className="hover:underline decoration-indigo-500"
+                                >
+                                    Experience
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={() => scrollToSection('contact')}
+                                    className="hover:underline decoration-indigo-500"
+                                >
+                                    Contact
+                                </button>
+                            </li>
                         </ul>
                     </div>
-                    <a className={`btn btn-ghost text-xl ${isDark === true ? 'text-white' : 'text-black'} transition-colors`}>RF.connect</a>
+                    <button
+                        onClick={() => scrollToSection('contact')}
+                        className={`btn btn-ghost text-xl ${isDark === true ? 'text-white' : 'text-black'} transition-colors`}>
+                        RF.connect
+                    </button>
                 </div>
 
                 <div className="navbar-center hidden md:flex">
