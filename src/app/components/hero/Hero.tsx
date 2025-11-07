@@ -34,7 +34,7 @@ export default function Hero() {
             Hi, I&apos;m Rafa Fadhila
           </h1>
           <h3 className="text-[20px] font-medium mb-5 text-center md:text-left">
-            I&apos;m a Future Web Designer, And Fullstack Web Developer
+            I&apos;m a Web Developer, And Web Designer
           </h3>
           {/* socmed */}
           <SocialMediaLink></SocialMediaLink>
