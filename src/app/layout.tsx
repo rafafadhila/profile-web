@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     name: 'Rafa Fadhila Putra',
   }],
   openGraph: {
-    title: "Rafa Fadhila Profile Website || Web Developer",
+    title: "Rafa Fadhila Profile Website",
     description: "Rafa Fadhila — a web developer focused on crafting responsive, efficient, and visually engaging websites with clean, modern code.",
     url: process.env.NEXT_PUBLIC_BASE_URL,
-    siteName: "Future Fitness",
+    siteName: "Rafa Fadhila Portfolio  || Web Developer",
     images: [
       {
         url: "/images/profile-pic.jpg",
