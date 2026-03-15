@@ -6,7 +6,7 @@ export async function POST(req: NextRequest) {
         const body = await req.json();
         const { name, email, message } = body;
 
-        const response = await Backendless.Data.of("PersonalWebMessages").save({
+        const response = await Backendless.Data.of("Messages").save({
             name,
             email,
             message,
