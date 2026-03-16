@@ -4,6 +4,7 @@ import React from 'react'
 
 import { useTheme } from '@/app/providers/themeProvider'
 import experienceData from '@/data/experiencesData.json'
+import SectionHeader from '../ui/SectionHeader'
 
 export default function Experience() {
 
@@ -15,11 +16,7 @@ export default function Experience() {
             className={`flex flex-col justify-center items-center min-h-[45vh] scroll-m-[65px] ${isDark ? 'bg-neutral-950' : 'bg-white text-black'} transition-colors`}
         >
             <div className="container max-w-4xl mx-auto px-5 py-10 text-center">
-                <h1 className="text-4xl font-semibold mb-12 underline-offset-8 underline decoration-indigo-800">Experience</h1>
-
-                <h2 className='text-xl font-semibold mb-6'>
-                    A summary of my work experience
-                </h2>
+                <SectionHeader title='Experience' subtitle='A summary of my work experience'/>
 
                 {experienceData.map((exp, index) => (
                     <div key={index} className={`max-w-full rounded-md overflow-hidden ${isDark ? 'bg-neutral-800 text-white' : 'bg-neutral-50 shadow-md text-black'} transition-colors tracking-wide`}>

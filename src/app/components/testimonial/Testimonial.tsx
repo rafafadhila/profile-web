@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import { useTheme } from '@/app/providers/themeProvider'
 import testimonialData from '@/data/testimonialData.json'
+import SectionHeader from '../ui/SectionHeader'
 
 export default function Testimonial() {
     const { isDark } = useTheme()
@@ -26,14 +27,7 @@ export default function Testimonial() {
                 } transition-colors`}
         >
             <div className="container max-w-5xl mx-auto px-5 md:px-10 py-10 text-center">
-                {/* Title */}
-                <h1 className="text-3xl md:text-4xl font-semibold mb-8 md:mb-12 underline underline-offset-8 decoration-indigo-800">
-                    Feedback Corner
-                </h1>
-
-                <h2 className="text-lg md:text-xl font-semibold mb-6 leading-relaxed">
-                    Thoughts and impressions from those who&apos;ve collaborated with me.
-                </h2>
+                <SectionHeader title='Feedback Corner' subtitle='Thoughts and impressions from those who&apos;ve collaborated with me.'/>
 
                 {/* Card Section */}
                 <div
