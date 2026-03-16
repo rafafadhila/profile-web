@@ -9,6 +9,7 @@ import { useTheme } from '@/app/providers/themeProvider'
 import FormMessage from '@/features/message/components/FormMessage';
 import SocialMediaLink from '../ui/SocialMediaLink';
 import SectionHeader from '../ui/SectionHeader';
+import ScrollReveal from '../ui/ScrollReveal';
 
 export default function Contact() {
 
@@ -23,25 +24,29 @@ export default function Contact() {
                 <SectionHeader title='Contact' />
                 <div className='grid sm:grid-cols-1 md:grid-cols-[45%_55%] gap-2 md:gap-10 items-center'>
 
-                    <div className='flex flex-col items-center gap-6'>
-                        <h2 className='text-xl font-semibold'>
-                            Lets&apos; Build Our Next Project Together!
-                        </h2>
-                        <a href='tel:+6281388180048'
-                            className='flex gap-3 border-2 border-indigo-800 px-3 py-2 rounded-2xl hover:cursor-pointer hover:scale-110 shadow-md transition-all'>
-                            <FaPhone className='text-2xl' />
-                            <span>+62 813-8818-0048</span>
-                        </a>
-                        <a href='mailto:rafafadhila03@gmail.com'
-                            className='flex gap-3 border-2 border-indigo-800 px-3 py-2 rounded-2xl hover:cursor-pointer hover:scale-110 shadow-md transition-all'>
-                            <GoMail className='text-2xl' />
-                            <span>rafafadhila03@gmail.com</span>
-                        </a>
-                        {/* socmed */}
-                        <SocialMediaLink></SocialMediaLink>
-                    </div>
+                    <ScrollReveal direction='right' delay={0.4}>
+                        <div className='flex flex-col items-center gap-6'>
+                            <h2 className='text-xl font-semibold'>
+                                Lets&apos; Build Our Next Project Together!
+                            </h2>
+                            <a href='tel:+6281388180048'
+                                className='flex gap-3 border-2 border-indigo-800 px-3 py-2 rounded-2xl hover:cursor-pointer hover:scale-110 shadow-md transition-all'>
+                                <FaPhone className='text-2xl' />
+                                <span>+62 813-8818-0048</span>
+                            </a>
+                            <a href='mailto:rafafadhila03@gmail.com'
+                                className='flex gap-3 border-2 border-indigo-800 px-3 py-2 rounded-2xl hover:cursor-pointer hover:scale-110 shadow-md transition-all'>
+                                <GoMail className='text-2xl' />
+                                <span>rafafadhila03@gmail.com</span>
+                            </a>
+                            {/* socmed */}
+                            <SocialMediaLink></SocialMediaLink>
+                        </div>
+                    </ScrollReveal>
 
-                    <FormMessage></FormMessage>
+                    <ScrollReveal direction='left' delay={0.4}>
+                        <FormMessage />
+                    </ScrollReveal>
 
                 </div>
 
