@@ -5,6 +5,7 @@ import skillCategories from '../../../data//skillsData.json'
 
 import { useTheme } from '@/app/providers/themeProvider'
 import Image from 'next/image'
+import SectionHeader from '../ui/SectionHeader'
 
 export default function Skill() {
 
@@ -18,14 +19,8 @@ export default function Skill() {
       } transition-colors scroll-m-[65px]`}
   >
     <div className="container max-w-4xl mx-auto px-5 py-10 text-center">
-      <h1 className="text-4xl font-semibold mb-12 underline-offset-8 underline decoration-indigo-800">
-        Skills
-      </h1>
-
-      <h2 className="text-xl font-semibold mb-6">
-        The skills and technologies I use in front-end, back-end, and DevOps
-        during the website projects I&apos;ve worked on.
-      </h2>
+      <SectionHeader title='Skills & Tech' subtitle='The skills and technologies I use in front-end, back-end, and DevOps
+        during the website projects I&apos;ve worked on.'/>
 
       {skillCategories.map((category) => (
         <div key={category.title} className="mb-10">

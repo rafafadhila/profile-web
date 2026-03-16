@@ -3,6 +3,7 @@
 import React from 'react'
 
 import { useTheme } from '@/app/providers/themeProvider'
+import SectionHeader from '../ui/SectionHeader'
 
 
 export default function About() {
@@ -16,7 +17,7 @@ export default function About() {
         ${isDark === true ? 'bg-neutral-900 text-white' : 'bg-neutral-50 text-black'} transition-colors`}
     >
       <div className="container max-w-4xl mx-auto px-5 py-10 text-center">
-        <h2 className="text-4xl font-semibold mb-12 underline-offset-8 underline decoration-indigo-800">About Me</h2>
+        <SectionHeader title='About Me'/>
 
         <p className="sm:text-center md:text-justify mb-6 leading-relaxed">
           I&apos;m Rafa Fadhila, a Computer Science graduate from Bina Nusantara University.

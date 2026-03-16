@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 import { useTheme } from '@/app/providers/themeProvider';
 import { useSmoothScroll } from '@/hooks/useSmoothScroll';
-import SocialMediaLink from '../SocialMediaLink';
+import SocialMediaLink from '../ui/SocialMediaLink';
 
 export default function Hero() {
 

@@ -4,6 +4,7 @@ import React from 'react'
 import { useTheme } from '@/app/providers/themeProvider'
 import portfolioData from '@/data/portfoliosData.json'
 import Image from 'next/image'
+import SectionHeader from '../ui/SectionHeader'
 
 export default function Portfolio() {
     const { isDark } = useTheme()
@@ -15,13 +16,7 @@ export default function Portfolio() {
         ${isDark ? 'bg-neutral-900 text-white' : 'bg-neutral-50 text-black'} transition-colors`}
         >
             <div className="container max-w-4xl mx-auto px-5 py-10 text-center">
-                <h1 className="text-4xl font-semibold mb-12 underline-offset-8 underline decoration-indigo-800">
-                    Portfolio
-                </h1>
-
-                <h2 className="text-xl font-semibold mb-6">
-                    A collection of projects I worked on during my studies and internship, showcasing my experience in developing and improving web applications.
-                </h2>
+                <SectionHeader title='Portfolio' subtitle='A collection of projects I worked on during my studies and internship, showcasing my experience in developing and improving web applications.'/>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 tracking-wide">
                     {portfolioData.map((project, index) => (
