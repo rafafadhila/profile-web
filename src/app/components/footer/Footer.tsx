@@ -5,7 +5,7 @@ import React from 'react'
 
 import { useTheme } from '@/app/providers/themeProvider'
 import { useSmoothScroll } from '@/hooks/useSmoothScroll'
-import SocialMediaLink from '../SocialMediaLink'
+import SocialMediaLink from '../ui/SocialMediaLink'
 
 export default function Footer() {
 
