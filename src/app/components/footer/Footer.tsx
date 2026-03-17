@@ -15,7 +15,7 @@ export default function Footer() {
     return (
         <footer className={`${isDark ? 'bg-black text-white' : 'bg-neutral-300 text-black'}`}>
             <div className={`flex flex-col max-w-4xl mx-auto py-5 px-3 text-center divide-gray-800 divide-y`}>
-                <div className='flex justify-center items-center gap-6'>
+                <div className='flex justify-center items-center gap-6 py-3'>
                     <SocialMediaLink></SocialMediaLink>
                 </div>
                 <div className='flex flex-wrap justify-center items-center gap-8 py-3'>
