@@ -34,7 +34,7 @@ export default function InfoBadge({ icon, label, value }: InfoBadgeProps) {
                 <span className="text-[10px] md:text-xs font-bold uppercase tracking-wider opacity-60">
                     {label}
                 </span>
-                <span className="text-xs md:text-sm font-semibold truncate">
+                <span className="text-xs md:text-sm font-semibold truncate tracking-wider">
                     {value}
                 </span>
             </div>
