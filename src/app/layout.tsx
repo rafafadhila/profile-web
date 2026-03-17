@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./providers/themeProvider";
 import { ToastContainer } from "react-toastify";
 
-const montserrat = Montserrat({
-  weight: ['500', '600', '700', '800'],
-  variable: "--font-montserrat",
+const outfit = Outfit({
+  weight: ['400', '500', '600', '700', '800'],
+  variable: "--font-outfit",
   subsets: ["latin"]
 })
 
@@ -48,9 +48,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <body
-        className={`${montserrat.variable} antialiased`}
+        className={`${outfit.variable} antialiased overflow-x-hidden`}
       >
         <ThemeProvider>
           {children}

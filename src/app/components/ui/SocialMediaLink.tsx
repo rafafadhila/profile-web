@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 export default function SocialMediaLink() {
     return (
-        <div className="flex gap-3 mb-3 justify-center md:justify-start">
+        <div className="flex gap-3 justify-center md:justify-start">
             <a
                 href="https://github.com/rafafadhila"
                 target="_blank"
