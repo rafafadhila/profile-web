@@ -48,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-x-hidden">
+    <html lang="en" className="overflow-x-hidden" suppressHydrationWarning>
       <body
         className={`${outfit.variable} antialiased overflow-x-hidden`}
       >

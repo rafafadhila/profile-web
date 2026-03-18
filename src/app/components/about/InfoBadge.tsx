@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { useTheme } from '@/app/providers/themeProvider'
+import { useThemeToggle } from '@/hooks/useThemeToggle';
 
 interface InfoBadgeProps {
     icon: React.ReactNode;
@@ -10,7 +10,7 @@ interface InfoBadgeProps {
 }
 
 export default function InfoBadge({ icon, label, value }: InfoBadgeProps) {
-    const { isDark } = useTheme();
+    const { isDark } = useThemeToggle();
 
     return (
         <div

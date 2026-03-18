@@ -3,21 +3,20 @@
 import React from 'react'
 import Image from 'next/image'
 
-import { useTheme } from '@/app/providers/themeProvider';
+import { useThemeToggle } from '@/hooks/useThemeToggle';
 import { useSmoothScroll } from '@/hooks/useSmoothScroll';
 import SocialMediaLink from '../ui/SocialMediaLink';
-import { FaChevronDown } from 'react-icons/fa';
 import { SlArrowDown } from 'react-icons/sl';
 
 export default function Hero() {
 
   const { scrollToSection } = useSmoothScroll()
-  const { isDark } = useTheme()
+  const { isDark } = useThemeToggle()
 
   return (
     <section
       id="hero"
-      className={`${isDark ? 'bg-neutral-950' : 'bg-white'} transition-colors`}
+      className={`dark:bg-neutral-950 bg-white transition-colors`}
     >
       <div className='flex flex-col md:flex-row justify-center md:justify-center items-center max-w-5xl min-h-screen mx-auto px-4 gap-3 pt-[64px] md:pt-0'>
 
@@ -32,7 +31,7 @@ export default function Hero() {
           />
         </div>
 
-        <div className={`about-me flex flex-col gap-3 text-center md:text-left p-5 ${isDark ? 'text-white' : 'text-black'} transition-colors`}>
+        <div className={`about-me flex flex-col gap-3 text-center md:text-left p-5 dark:text-white text-black transition-colors`}>
           <h1 className="text-[52px] font-extrabold text-center md:text-left">
             Hi, I&apos;m Rafa Fadhila
           </h1>

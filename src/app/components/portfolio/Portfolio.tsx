@@ -1,20 +1,19 @@
 'use client'
 
 import React from 'react'
-import { useTheme } from '@/app/providers/themeProvider'
 import portfolioData from '@/data/portfoliosData.json'
 import Image from 'next/image'
 import SectionHeader from '../ui/SectionHeader'
 import ScrollReveal from '../ui/ScrollReveal'
+import { useThemeToggle } from '@/hooks/useThemeToggle'
 
 export default function Portfolio() {
-    const { isDark } = useTheme()
+    const { isDark } = useThemeToggle()
 
     return (
         <section
             id="portfolio"
-            className={`flex flex-col justify-center items-center min-h-[45vh] scroll-m-[65px]
-        ${isDark ? 'bg-neutral-900 text-white' : 'bg-neutral-50 text-black'} transition-colors`}
+            className={`flex flex-col justify-center items-center min-h-[45vh] scroll-m-[65px] dark:bg-neutral-900 dark:text-white bg-neutral-50 text-black transition-colors`}
         >
             <div className="container max-w-4xl mx-auto px-5 py-10 text-center">
                 <SectionHeader title='Portfolio' subtitle='A collection of projects I worked on during my studies and internship, showcasing my experience in developing and improving web applications.' />

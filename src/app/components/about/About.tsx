@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { useTheme } from '@/app/providers/themeProvider'
+import { useThemeToggle } from '@/hooks/useThemeToggle'
 import SectionHeader from '../ui/SectionHeader'
 import InfoBadge from './InfoBadge'
 
@@ -9,7 +9,7 @@ import { FaEnvelope, FaFlag, FaMapMarkerAlt, FaGraduationCap, FaUser, FaMedal } 
 import ScrollReveal from '../ui/ScrollReveal'
 
 export default function About() {
-  const { isDark } = useTheme()
+  const { isDark } = useThemeToggle()
 
   const birthDate = new Date('2003-03-17');
   const today = new Date();
@@ -24,7 +24,7 @@ export default function About() {
     <section
       id="about"
       className={`flex flex-col justify-center items-center min-h-[45vh] scroll-mt-[65px]
-        ${isDark === true ? 'bg-neutral-900 text-white' : 'bg-neutral-50 text-black'} transition-colors`}
+        dark:bg-neutral-900 dark:text-white bg-neutral-50 text-black transition-colors`}
     >
       <div className="container max-w-5xl mx-auto px-5 py-10 text-center">
         <SectionHeader title='About Me' />
