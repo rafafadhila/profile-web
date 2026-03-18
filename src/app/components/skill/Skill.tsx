@@ -3,21 +3,20 @@
 import React from 'react'
 import skillCategories from '../../../data//skillsData.json'
 
-import { useTheme } from '@/app/providers/themeProvider'
 import Image from 'next/image'
 import SectionHeader from '../ui/SectionHeader'
 import ScrollReveal from '../ui/ScrollReveal'
+import { useThemeToggle } from '@/hooks/useThemeToggle'
 
 export default function Skill() {
 
-  const { isDark } = useTheme()
+  const { isDark } = useThemeToggle()
 
   return (
 
     <section
       id="skill"
-      className={`flex flex-col justify-center items-center min-h-[75vh] ${isDark ? "bg-neutral-950 text-white" : "bg-white text-black"
-        } transition-colors scroll-m-[65px]`}
+      className={`flex flex-col justify-center items-center min-h-[75vh] dark:bg-neutral-950 dark:text-white bg-white text-black transition-colors scroll-m-[65px]`}
     >
       <div className="container max-w-4xl mx-auto px-5 py-10 text-center">
         <SectionHeader title='Skills & Tech' subtitle='The skills and technologies I use in front-end, back-end, and DevOps

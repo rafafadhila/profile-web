@@ -5,20 +5,20 @@ import React from 'react'
 import { FaPhone } from "react-icons/fa6";
 import { GoMail } from "react-icons/go";
 
-import { useTheme } from '@/app/providers/themeProvider'
 import FormMessage from '@/features/message/components/FormMessage';
 import SocialMediaLink from '../ui/SocialMediaLink';
 import SectionHeader from '../ui/SectionHeader';
 import ScrollReveal from '../ui/ScrollReveal';
+import { useThemeToggle } from '@/hooks/useThemeToggle';
 
 export default function Contact() {
 
-    const { isDark } = useTheme()
+    const { isDark } = useThemeToggle()
 
     return (
         <section
             id="contact"
-            className={`flex flex-col justify-center items-center min-h-[45vh] scroll-m-[65px] ${isDark ? 'bg-neutral-900' : 'bg-neutral-50 text-black'} transition-colors`}
+            className={`flex flex-col justify-center items-center min-h-[45vh] scroll-m-[65px] dark:bg-neutral-900 dark:text-white bg-neutral-50 text-black transition-colors`}
         >
             <div className="container max-w-4xl mx-auto px-5 py-10 text-center">
                 <SectionHeader title='Contact' />

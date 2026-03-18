@@ -3,15 +3,15 @@
 import React from 'react'
 
 import { useSmoothScroll } from '@/hooks/useSmoothScroll'
-import { useTheme } from '@/app/providers/themeProvider'
+import { useThemeToggle } from '@/hooks/useThemeToggle'
 
 export default function Navbar() {
 
     const { scrollToSection } = useSmoothScroll()
-    const { isDark, toggleTheme } = useTheme()
+    const { isDark, toggleTheme, mounted } = useThemeToggle()
 
     return (
-        <header className={`fixed w-screen ${isDark === true ? 'bg-neutral-950 text-white' : 'bg-white text-black'} transition-colors z-10 `}>
+        <header className="fixed w-screen bg-white text-black dark:bg-neutral-950 dark:text-white transition-colors z-10">
             <div className={` navbar px-5 max-w-6xl mx-auto`}>
 
                 <div className="navbar-start ">
@@ -74,7 +74,7 @@ export default function Navbar() {
                     </div>
                     <button
                         onClick={() => scrollToSection('contact')}
-                        className={`btn btn-ghost text-xl ${isDark === true ? 'text-white' : 'text-black'} transition-colors`}>
+                        className="btn btn-ghost text-xl text-black dark:text-white transition-colors">
                         RF.connect
                     </button>
                 </div>
@@ -135,8 +135,8 @@ export default function Navbar() {
                 <div className="navbar-end">
                     <button
                         onClick={toggleTheme}
-                        className={`btn ${isDark === true ? 'bg-neutral-950 text-white' : 'bg-white'} transition-colors`} >
-                        {isDark === true ? '☀️' : '🌙'}
+                        className="btn bg-white dark:bg-neutral-950 text-black dark:text-white transition-colors" >
+                        {mounted ? (isDark ? '☀️' : '🌙') : '...'}
                     </button>
                 </div>
 

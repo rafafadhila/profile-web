@@ -2,13 +2,13 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image'
-import { useTheme } from '@/app/providers/themeProvider'
 import testimonialData from '@/data/testimonialData.json'
 import SectionHeader from '../ui/SectionHeader'
 import ScrollReveal from '../ui/ScrollReveal'
+import { useThemeToggle } from '@/hooks/useThemeToggle'
 
 export default function Testimonial() {
-    const { isDark } = useTheme()
+    const { isDark } = useThemeToggle()
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const nextSlide = () => {
@@ -24,8 +24,7 @@ export default function Testimonial() {
     return (
         <section
             id="testimonial"
-            className={`flex flex-col justify-center items-center min-h-[55vh] scroll-m-[65px] ${isDark ? 'bg-neutral-950 text-white' : 'bg-white text-black'
-                } transition-colors`}
+            className={`flex flex-col justify-center items-center min-h-[55vh] scroll-m-[65px] dark:bg-neutral-950 dark:text-white bg-white text-black transition-colors`}
         >
             <div className="container max-w-5xl mx-auto px-5 md:px-10 py-10 text-center">
                 <SectionHeader title='Feedback Corner' subtitle='Thoughts and impressions from those who&apos;ve collaborated with me.' />

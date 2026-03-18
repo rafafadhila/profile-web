@@ -3,17 +3,17 @@
 import React from 'react'
 
 
-import { useTheme } from '@/app/providers/themeProvider'
 import { useSmoothScroll } from '@/hooks/useSmoothScroll'
 import SocialMediaLink from '../ui/SocialMediaLink'
+import { useThemeToggle } from '@/hooks/useThemeToggle'
 
 export default function Footer() {
 
-    const { isDark } = useTheme()
+    const { isDark } = useThemeToggle()
     const { scrollToSection } = useSmoothScroll()
 
     return (
-        <footer className={`${isDark ? 'bg-black text-white' : 'bg-neutral-300 text-black'}`}>
+        <footer className={`dark:bg-black dark:text-white bg-neutral-300 text-black`}>
             <div className={`flex flex-col max-w-4xl mx-auto py-5 px-3 text-center divide-gray-800 divide-y`}>
                 <div className='flex justify-center items-center gap-6 py-3'>
                     <SocialMediaLink></SocialMediaLink>

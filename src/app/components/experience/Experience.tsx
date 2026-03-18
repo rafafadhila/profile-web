@@ -2,19 +2,19 @@
 
 import React from 'react'
 
-import { useTheme } from '@/app/providers/themeProvider'
 import experienceData from '@/data/experiencesData.json'
 import SectionHeader from '../ui/SectionHeader'
 import ScrollReveal from '../ui/ScrollReveal'
+import { useThemeToggle } from '@/hooks/useThemeToggle'
 
 export default function Experience() {
 
-    const { isDark } = useTheme()
+    const { isDark } = useThemeToggle()
 
     return (
         <section
             id="experience"
-            className={`flex flex-col justify-center items-center min-h-[45vh] scroll-m-[65px] ${isDark ? 'bg-neutral-950' : 'bg-white text-black'} transition-colors`}
+            className={`flex flex-col justify-center items-center min-h-[45vh] scroll-m-[65px] dark:bg-neutral-950 dark:text-white bg-white text-black transition-colors`}
         >
             <div className="container max-w-4xl mx-auto px-5 py-10 text-center">
                 <SectionHeader title='Experience' subtitle='A summary of my work experience' />

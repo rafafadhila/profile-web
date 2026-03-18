@@ -1,26 +1,23 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useTheme } from 'next-themes'
+import { useEffect, useState } from 'react'
 
 export function useThemeToggle() {
-  const [isDark, setIsDark] = useState<boolean>(true)
+  const { theme, setTheme, resolvedTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
 
-  // Load from localStorage on first render
+  // Pastikan komponen sudah di-mount di klien sebelum merender UI toggle
   useEffect(() => {
-    const storedTheme = localStorage.getItem('theme')
-    if (storedTheme) {
-      setIsDark(storedTheme === 'dark')
-    }
+    setMounted(true)
   }, [])
 
-  // Save to localStorage whenever it changes
-  useEffect(() => {
-    localStorage.setItem('theme', isDark ? 'dark' : 'light')
-  }, [isDark])
+  // resolvedTheme berguna untuk mengetahui tema aktual jika mode 'system' dipilih
+  const isDark = mounted && (theme === 'dark' || resolvedTheme === 'dark')
 
   function toggleTheme() {
-    setIsDark(prev => !prev)
+    setTheme(isDark ? 'light' : 'dark')
   }
 
-  return { isDark, toggleTheme }
+  return { isDark, toggleTheme, mounted }
 }
