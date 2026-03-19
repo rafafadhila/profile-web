@@ -1,14 +1,47 @@
 [
   {
+    "id": "1",
+    "title": "PT. Phizeta Company Profile with CMS",
+    "image": "/portfolio/ludolog.png",
+    "description": "The primary goal of this web project was to enhance the company's online visibility and presence. My core tasks were to develop the Company Profile website and an internal Dashboard for component editing. The tech stack utilized for this development was Laravel and PostgreSQL. The final presentation to my supervisor was highly successful and well-received.",
+    "tech": ["Laravel", "PostgreSQL"],
+    "demo": "",
+    "repo": "https://github.com/rafafadhila/pui_laravel"
+  },
+  {
+    "id": "2",
     "title": "Web Apps for Game Tracking",
     "image": "/portfolio/ludolog.png",
     "description": "This project aimed to solve issues with game discovery and tracking. My main duties involved web design and documentation creation. A primary challenge was using Figma to develop an effective and memorable UI. Ultimately, the user feedback received has been very positive.",
-    "tech": ["Laravel", "React"]
+    "tech": ["Laravel", "React", "MySql"],
+    "demo": "",
+    "repo": "https://github.com/duffodills/skripsi-backend"
   },
   {
-    "title": "Developed Company Profile for PT.Phizeta",
-    "image": "/portfolio/ludolog.png",
-    "description": "The primary goal of this web project was to enhance the company's online visibility and presence. My core tasks were to develop the Company Profile website and an internal Dashboard for component editing. The tech stack utilized for this development was Laravel and PostgreSQL. The final presentation to my supervisor was highly successful and well-received.",
-    "tech": ["Laravel", "PostgreSQL"]
+    "id": "3",
+    "title": "Future Fitness - Company Profile with blog",
+    "image": "/portfolio/future-fitness.png",
+    "description": "Designed and launched a professional company profile within 3 weeks, prioritizing a clean UI for enhanced readability and implementing a robust SEO-friendly structure that resulted in successful search engine indexing and blog functionality.",
+    "tech": ["Next.js"],
+    "demo": "https://company-profile-fitness.vercel.app/",
+    "repo": "https://github.com/rafafadhila/company-profile-fitness"
+  },
+  {
+    "id": "4",
+    "title": "Evoria - Event Management Platform",
+    "image": "/portfolio/evoria.png",
+    "description": "Co-developed Evoria (Fullstack) in 2 months, leading the ticketing, homepage, and promotion modules. Focused on a modern UI/UX for a seamless user journey, resulting in a feature-complete platform that received high praise from mentors for its intuitive functionality.",
+    "tech": ["Next.js", "Node.js", "Express", "PostgreSQL"],
+    "demo": "",
+    "repo": "https://github.com/haidarfahmii/evoria-event-management"
+  },
+  {
+    "id": "5",
+    "title": "Gosokind - Laundry Web App",
+    "image": "/portfolio/gosokind.png",
+    "description": "In a 3-person team over 2 months, I developed Gosokind, an integrated laundry platform. As the Customer-side Fullstack Developer, I built the authentication, order system, and real-time status tracking with Midtrans payment integration. The project was recognized as a top-tier bootcamp project and successfully deployed for live use.",
+    "tech": ["Next.js", "Node.js", "Express", "PostgreSQL"],
+    "demo": "https://gosokind-frontend.vercel.app/",
+    "repo": "https://github.com/rafafadhila/gosokind-master"
   }
 ]
