@@ -28,26 +28,28 @@ export default function Skill() {
               <h3 className="text-xl font-semibold mb-5">{category.title}</h3>
             </ScrollReveal>
 
-            <ScrollReveal direction='up' delay={0.5}>
-              <div className="flex gap-5 justify-center items-center flex-wrap">
-                {category.tools.map((tool) => (
-                    <div
-                      key={tool.name}
-                      className={`w-24 h-24 flex justify-center items-center rounded-full ${isDark ? "bg-neutral-200" : "bg-white"
-                        } shadow-sm shadow-indigo-300 hover:shadow-md hover:scale-105 transition-all`}
-                    >
-                      <Image
-                        src={tool.logo}
-                        alt={tool.name}
-                        title={tool.name}
-                        width={64}
-                        height={64}
-                        className="object-contain"
-                      />
-                    </div>
-                ))}
-              </div>
-            </ScrollReveal>
+            <div className="flex gap-5 justify-center items-center flex-wrap">
+              {/* Tambahkan parameter index pada map */}
+              {category.tools.map((tool, index) => (
+                /* Pindahkan ScrollReveal untuk membungkus masing-masing item */
+                /* Gunakan index untuk membuat delay yang dinamis (bertambah 0.1s setiap item) */
+                <ScrollReveal key={tool.name} direction='right' delay={0.5 + (index * 0.05)}>
+                  <div
+                    className={`w-24 h-24 flex justify-center items-center rounded-full ${isDark ? "bg-neutral-200" : "bg-white"
+                      } shadow-sm shadow-indigo-300 hover:shadow-md hover:scale-105 transition-all`}
+                  >
+                    <Image
+                      src={tool.logo}
+                      alt={tool.name}
+                      title={tool.name}
+                      width={64}
+                      height={64}
+                      className="object-contain"
+                    />
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
           </div>
         ))}
       </div>
